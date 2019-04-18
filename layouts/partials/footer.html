@@ -36,9 +36,11 @@
             <nav class="level is-mobile">
               <div class="level-left">
                 {{- range $socialMedia }}
+                {{- if .active }}
                 <a class="level-item" href="{{ .link }}">
                   <span class="icon"><i class="fa fa-{{ .icon }}"></i></span>
                 </a>
+                {{- end }}
                 {{- end }}
               </div>
             </nav>
